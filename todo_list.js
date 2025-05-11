@@ -23,3 +23,8 @@ function displayTasks() {
         taskList.appendChild(li);
     });
 }
+
+function toggleTask(index) {
+    tasks[index].completed = !tasks[index].completed;
+    displayTasks();
+}
